@@ -1,14 +1,11 @@
-var recipeApi =
-  "https://api.edamam.com/api/recipes/v2?type=public&app_id=884e8098&app_key=b54753688c6e693be539e5e20d2ecb49";
+var userInput = $("#ingri1").val();
+var recipeApi = `https://api.spoonacular.com/food/ingredients/search?apiKey=f2ff7323d7874b7aa2f8de38094d02e7&query=${userInput}`;
 
 $("#ingredientBtn").on("click", function () {
   $.ajax({
-    type: "GET",
-    async: false,
     url: recipeApi,
     success: function (result) {
       console.log(result);
-      $("#recipeName").html(result);
     },
   });
 });
