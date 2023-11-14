@@ -18,22 +18,19 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link href="https://api.edamam.com/api/recipes/v2" />
     <link rel="stylesheet" href="./dev/styles.css" />
-    <title>Work Day Scheduler</title>
+    <title>kumamo</title>
   </head>
-
   <body>
     <header>
       <h1>app name</h1>
     </header>
-
     <section class="startPage">
       <h2>Don't kow what to do with what's in your fridge? We can help!</h2>
       <img src="" alt="" />
       <button class="button" id="startBtn">Let's get started</button>
     </section>
-    <!-- 
+    <!--
         <section class="typePage">
             <h2>What do you want to make?</h2>
             <section class="typeList">
@@ -44,7 +41,6 @@
             </section>
             <button class="button" id="typeBtn">Next</button>
         </section> -->
-
     <section class="ingredientPage">
       <h2>What do you have in your fridge right now?</h2>
       <section class="ingredientList">
@@ -69,20 +65,18 @@
       </section>
       <button class="button" id="ingredientBtn">Next</button>
     </section>
-
     <!-- <section class="dietPage">
             <h2>Any Dietary Restriction?</h2>
-            <section class="dietList">
+            <section class="dietList">+
                 Javascript Stuff
             </section>
             <button class="button" id="dietBtn">Fine Recipe!</button>
         </section> -->
-
     <section class="recipePage">
       <h2>Try this Recipe</h2>
       <section class="foundRecipe">
         <!-- possible bootstrap component -->
-        <h3 id=" recipeName">COOKIES</h3>
+        <h3 id="recipeName">COOKIES</h3>
         <section>
           API HERE
           <!-- javascript stuff here , fetch, generate element, append-->
@@ -91,7 +85,6 @@
           API HERE
           <!-- javascript stuff here , fetch, generate element, append-->
         </section>
-
         <!-- test api functionality -->
         <section class="recipe"></section>
         <section class="nutrition"></section>
@@ -99,7 +92,6 @@
       <button class="button" id="regenerateBtn">Find Another Recipe</button>
       <button class="button" id="restartBtn">Start from Beginning</button>
     </section>
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
