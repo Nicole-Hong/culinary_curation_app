@@ -13,11 +13,11 @@
 
 ## ✍️ Description
 
-Have you ever found yourself staring at the chaos in your fridge, unable to think of a way to utilize what's in it? We've all been there, and now we have created a solution to that common problem! 🐻 Kumamo is an easy to use **application that will choose your meal for you!** 
+Have you ever found yourself staring at the chaos in your fridge, unable to think of a way to utilize what's in it? We've all been there, and now we have created a solution to that common problem! 🐻 Kumamo is an easy to use **application that will choose your meal for you!**
 
-Using our website, you can **enter ingredients found in your fridge**, and the page will **find you a dish that uses those ingredients**. 
+Using our website, you can **enter ingredients found in your fridge**, and the page will **find you a dish that uses those ingredients**.
 
-Our website uses API functionality to provide you, the user, with **recipes, photos, links, and even nutritional facts** so that you can find exaclty what you're looking for. You will also be provided with various options to choose from, in case the first dish doesn't match with your personal taste. 
+Our website uses API functionality to provide you, the user, with **recipes, photos, links, and even nutritional facts** so that you can find exaclty what you're looking for. You will also be provided with various options to choose from, in case the first dish doesn't match with your personal taste.
 
 ## 📆 Timeline
 
@@ -30,9 +30,10 @@ Our website uses API functionality to provide you, the user, with **recipes, pho
 ## 💻 Usage
 
 ### Website Demo
+
 ![Kumamo-demo](https://github.com/Nicole-Hong/culinary_curation_app/assets/130778807/8eac9ac2-1876-4d98-8fa7-d6d98ecd377e)
 
-Visit Website > [Click here](https://nicole-hong.github.io/culinary_curation_app/)
+Visit Website > [Click here](https://ae-andre.github.io/kumamo_food_inspiration/)
 
 ## 🧑‍💻 Credits
 
@@ -60,11 +61,10 @@ After being prompted to enter **1-3 ingredients** in the input fields, you will 
 
 Click on the "Find Another Recipe" button to get up to **ten more recipes** using the same ingredients.
 
-See **nutritional information** on all of the dishes as well as **linked YouTube videos** on how to cook similar recipes on the final page. If you want to try finding **recipes using different ingredients**, then just click 'Start from Beginning' and you'll be taken back to the first page. 
+See **nutritional information** on all of the dishes as well as **linked YouTube videos** on how to cook similar recipes on the final page. If you want to try finding **recipes using different ingredients**, then just click 'Start from Beginning' and you'll be taken back to the first page.
 
 ## 🏛️ License
 
 This application uses an MIT License - See [here.](./LICENSE)
-
 
 ---

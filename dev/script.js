@@ -46,7 +46,7 @@ $("#ingredientBtn").on("click", function () {
   let ingredientItem1LC = ingredientItem1.toLowerCase();
   let ingredientItem2LC = ingredientItem2.toLowerCase();
   let ingredientItem3LC = ingredientItem3.toLowerCase();
-  var recipeApi = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientItem1LC},${ingredientItem2LC},${ingredientItem3LC}&apiKey=7a5414c1ec984a2bb38149115cb49f5f`;
+  var recipeApi = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientItem1LC},${ingredientItem2LC},${ingredientItem3LC}&apiKey=f2ff7323d7874b7aa2f8de38094d02e7`;
   result = [];
   $.ajax({
     url: recipeApi,
@@ -67,7 +67,7 @@ $("#ingredientBtn").on("click", function () {
         $("#recipeName").text(result[0].title);
         $("#nutritionLabel").attr(
           "src",
-          `https://api.spoonacular.com/recipes/${result[0].id}/nutritionLabel.png?apiKey=7a5414c1ec984a2bb38149115cb49f5f`
+          `https://api.spoonacular.com/recipes/${result[0].id}/nutritionLabel.png?apiKey=f2ff7323d7874b7aa2f8de38094d02e7`
         );
         $("#nutritionLabel").attr(
           "alt",
@@ -75,7 +75,7 @@ $("#ingredientBtn").on("click", function () {
         );
         function getRecipeUrl() {
           $.ajax({
-            url: `https://api.spoonacular.com/recipes/${result[0].id}/information?includeNutrition=false&apiKey=d4fc8b0b2ddf4d65864d92dabf969944`,
+            url: `https://api.spoonacular.com/recipes/${result[0].id}/information?includeNutrition=false&apiKey=f2ff7323d7874b7aa2f8de38094d02e7`,
             dataType: "json",
             success: function (response) {
               result = response;
@@ -104,7 +104,7 @@ $("#ingredientBtn").on("click", function () {
     $("#regenerateBtn").on("click", function () {
       currentRecipeIndex++;
       $.ajax({
-        url: `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientItem1LC},${ingredientItem2LC},${ingredientItem3LC}&apiKey=7a5414c1ec984a2bb38149115cb49f5f`,
+        url: `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientItem1LC},${ingredientItem2LC},${ingredientItem3LC}&apiKey=f2ff7323d7874b7aa2f8de38094d02e7`,
         dataType: "json",
         success: function (response) {
           result = response;
@@ -118,14 +118,14 @@ $("#ingredientBtn").on("click", function () {
             $("#recipeName").text(result[currentRecipeIndex].title);
             $("#nutritionLabel").attr(
               "src",
-              `https://api.spoonacular.com/recipes/${result[currentRecipeIndex].id}/nutritionLabel.png?apiKey=d4fc8b0b2ddf4d65864d92dabf969944`
+              `https://api.spoonacular.com/recipes/${result[currentRecipeIndex].id}/nutritionLabel.png?apiKey=f2ff7323d7874b7aa2f8de38094d02e7`
             );
             $("#nutritionLabel").attr(
               "alt",
               `Nutrition label for ${result[currentRecipeIndex].title} recipe`
             );
             $.ajax({
-              url: `https://api.spoonacular.com/recipes/${result[currentRecipeIndex].id}/information?includeNutrition=false&apiKey=d4fc8b0b2ddf4d65864d92dabf969944`,
+              url: `https://api.spoonacular.com/recipes/${result[currentRecipeIndex].id}/information?includeNutrition=false&apiKey=f2ff7323d7874b7aa2f8de38094d02e7`,
               dataType: "json",
               success: function (response) {
                 result = response;
